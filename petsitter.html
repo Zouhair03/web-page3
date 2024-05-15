@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your pet sitter</title>
+    <style>
+        .navbar ul{
+      list-style-type:none;
+      background-color: black;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+      }     
+      .navbar a{
+            color:white;
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            text-align: center;
+
+        }
+        .navbar a:hover{
+            background-color:  rgb(8, 233, 128);
+
+        }
+        .navbar li{
+            float: left;
+        }
+        .contenu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .pet {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid black;
+            text-align: justify;
+            border-radius: 15px;
+            padding: 30px;
+            height: 170px;
+            width: calc(33.33% - 20px); 
+            font-size: large;
+            margin: 10px; 
+           
+        }
+
+        .pet img {
+            width: 50%; 
+           
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="homepage2.html">Home</a>
+            </li>
+                
+                <li>
+                    <a href="dateloc.html">
+                    Find your pet sitter
+                </li></a>
+                
+                <li>
+                    <a href="howitworks.html">
+                    How it works
+                </li></a>
+                
+                <li style="float: right;"><a href="">Help</li></a>
+        
+                <li><a href="login2.html">Login</li></a>
+        
+        
+                <li><a href="signup3.html">Sign up</li></a>
+                <li><a href="Aboutus.html">About us</a></li>
+            
+            </ul>
+        
+        
+            </nav>
+            
+    <h1 style="text-align: center;">Welcome</h1>
+
+    <div class="contenu">
+        <div class="pet">
+            <img src="metier-devenir-pet-sitter-1.jpg">
+            <h4>yassine</h4>
+            <div>prix:200DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet"> 
+            <img src="pet2.jpg">
+            <h4>Najwa</h4>
+            <div>prix:200DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet3.jpg">
+            <h4>samir et leila</h4>
+            <div>prix:400DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet2(1).jpg">
+            <h4>imane</h4>
+            <div>prix:200DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet5.jpg">
+            <h4>vinisius</h4>
+            <div>prix:gratuit</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img  src="pet4.jpg">
+            <h4>wiam</h4>
+            <div>prix:400dh</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet7.jpg">
+            <h4>Amine</h4>
+            <div>prix:600DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet8.jpg">
+            <h4>Amina</h4>
+            <div>prix:600DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet9.jpg">
+            <h4>Latifa</h4>
+            <div>prix:600DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet10.jpg">
+            <h4>Sawsane</h4>
+            <div>prix:1000DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet11.jpg">
+            <h4>karim et karima</h4>
+            <div>prix:500DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet12.jpg">
+            <h4>Majdouline</h4>
+            <div>prix:400DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet13.jpg">
+            <h4>Nisrine</h4>
+            <div>prix:700DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet14.jpg">
+            <h4>Wiam et Zouhair</h4>
+            <div>prix:300DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        <div class="pet">
+            <img src="pet15.jpg">
+            <h4>Ahmed almaghribi</h4>
+            <div>prix:500DH</div>
+            <button class="add-to-cart">buy service</button>
+        </div>
+        
+    <footer></footer>
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                button.parentElement.innerHTML += "<p style='color:green;'>Service Bought!</p>";
+            });
+        });
+    </script>
+</body>
+</html>
